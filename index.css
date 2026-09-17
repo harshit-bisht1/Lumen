@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-app-region: drag
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font: 12px/1.4 -apple-system, system-ui, sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+}
+#info:empty { display: none; }

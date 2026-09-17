@@ -1,0 +1,26 @@
+{
+  "name": "lumen",
+  "version": "1.0.0",
+  "description": "A sleek, always-on-top audio visualizer that turns your Mac's system sound into a glowing, real-time spectrum wave at the bottom of your screen.",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Harshit Bisht",
+  "license": "ISC",
+  "build": {
+    "appId": "com.harshit.lumen",
+    "productName": "Lumen",
+    "mac": {
+      "category": "public.app-category.music",
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "electron": "^43.3.0",
+    "electron-builder": "^26.15.3"
+  }
+}
