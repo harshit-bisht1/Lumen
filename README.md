@@ -77,4 +77,7 @@ This produces a `.dmg` in `dist/`. The build is **unsigned**, so the first time 
 
 ## License
 
-ISC
+**All rights reserved.** © 2026 Harshit Bisht.
+
+This source is published for viewing only. You may not use, copy, modify, or
+distribute it without explicit written permission. See [LICENSE](LICENSE).

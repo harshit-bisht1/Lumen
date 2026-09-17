@@ -10,7 +10,8 @@
     "build": "electron-builder"
   },
   "author": "Harshit Bisht",
-  "license": "ISC",
+  "license": "UNLICENSED",
+  "private": true,
   "build": {
     "appId": "com.harshit.lumen",
     "productName": "Lumen",
