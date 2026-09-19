@@ -17,7 +17,8 @@
     "productName": "Lumen",
     "mac": {
       "category": "public.app-category.music",
-      "target": "dmg"
+      "target": "dmg",
+      "icon": "build/icon.icns"
     }
   },
   "devDependencies": {

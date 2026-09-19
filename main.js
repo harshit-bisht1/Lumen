@@ -57,6 +57,13 @@ const createWindow = () => {
 Menu.setApplicationMenu(null);
 
 app.whenReady().then(() => {
+  if (process.platform === 'darwin' && !app.isPackaged) {
+    // Packaged builds get their icon from build/icon.icns automatically;
+    // this only fixes the Dock icon during `npm start`, where build/ isn't otherwise loaded.
+    try {
+      app.dock.setIcon(path.join(__dirname, 'build/icon.png'));
+    } catch {}
+  }
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
